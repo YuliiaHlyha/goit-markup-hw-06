@@ -119,12 +119,21 @@ img {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/hero.jpg);
+    url(../images/heromob1x.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
+@media screen and (min-resolution: 2dppx), (min-resolution: 192dpi) {
+  .hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/heromob2x.jpg);
+  }
+}
 .hero-title {
   font-weight: 700;
   font-size: 36px;
@@ -208,8 +217,8 @@ img {
 
 .team {
   background-color: #f4f4fd;
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
 
 .team-title-main {
@@ -224,12 +233,15 @@ img {
 }
 
 .team-list {
+  padding-right: 12px;
+  padding-left: 12px;
   display: flex;
-  gap: 24px;
+  flex-wrap: wrap;
+  gap: 72px;
 }
+
 .team-item {
   background-color: #ffffff;
-  width: calc((100% - 3 * 24px) / 4);
   border-radius: 0 0 4px 4px;
   align-items: center;
   justify-content: center;
@@ -826,6 +838,21 @@ img {
     padding-top: 112px;
     padding-bottom: 112px;
     max-width: 768px;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/herotab1x.jpg);
+  }
+
+  @media screen and (min-resolution: 2dppx), (min-resolution: 192dpi) {
+    .hero {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/herotab2x.jpg);
+    }
   }
 
   .hero-title {
@@ -847,6 +874,19 @@ img {
 
   .features-title {
     text-align: left;
+  }
+
+  /* ___________________team______________________ */
+
+  .team-list {
+    gap: 24px;
+    padding-right: 92px;
+    padding-left: 92px;
+  }
+
+  .team-item {
+    width: calc((100% - 24px) / 2);
+    margin-bottom: 64px;
   }
 }
 
@@ -879,6 +919,21 @@ img {
     padding-top: 188px;
     padding-bottom: 188px;
     max-width: 1440px;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero.jpg);
+  }
+
+  @media screen and (min-resolution: 2dppx), (min-resolution: 192dpi) {
+    .hero {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/heromain2x.jpg);
+    }
   }
 
   /* _________________features_________________________ */
@@ -911,5 +966,16 @@ img {
 
   .features-text {
     font-weight: 400;
+  }
+
+  /* _____________________team_________________ */
+
+  .team {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+
+  .team-item {
+    width: calc((100% - 3 * 24px) / 4);
   }
 }
