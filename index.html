@@ -322,13 +322,16 @@
               <div class="portfolio-marketing">
                 <picture>
                   <source
-                    srcset="./images/bank1x.jpg 1x, ./images/bank2x.jpg 2x"
+                    srcset="
+                      ./images/bankdesktop1x-min.jpg 1x,
+                      ./images/desktop2x-min.jpg     2x
+                    "
                     media="(min-width: 1158px)"
                   />
                   <source
                     srcset="
-                      ./images/banktab1x.jpg 1x,
-                      ./images/banktab2x.jpg 2x
+                      ./images/banktab1x-min.jpg 1x,
+                      ./images/banktab2x-min.jpg 2x
                     "
                     media="(min-width: 768px)"
                   />
@@ -339,7 +342,11 @@
                     "
                     media="(max-width: 767px)"
                   />
-                  <img src="./images/bank1x.jpg" alt="BankApp" width="360" />
+                  <img
+                    src="./images/bankdesktop1x-min.jpg"
+                    alt="BankApp"
+                    width=""
+                  />
                 </picture>
                 <p class="portfolio-text-marketing">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -357,8 +364,8 @@
                 <picture>
                   <source
                     srcset="
-                      ./images/cashlessdesktop1x.jpg 1x,
-                      ./images/cashlessdesktop2x.jpg 2x
+                      ./images/cashlessdesktop1x-min.jpg 1x,
+                      ./images/cashlessdesktop2x-min.jpg 2x
                     "
                     media="(min-width: 1158px)"
                   />
@@ -377,9 +384,9 @@
                     media="(max-width: 767px)"
                   />
                   <img
-                    src="./images/cashlessdesktop1x.jpg"
+                    src="./images/cashlessmob1x-min.jpg"
                     alt="Payment"
-                    width="360"
+                    width=""
                   />
                 </picture>
                 <p class="portfolio-text-marketing">
@@ -398,8 +405,8 @@
                 <picture>
                   <source
                     srcset="
-                      ./images/meditationapp.jpg 1x,
-                      ./images/media2x-min.jpg   2x
+                      ./images/meditationapp.jpg      1x,
+                      ./images/mediadesktop2x-min.jpg 2x
                     "
                     media="(min-width: 1158px)"
                   />
@@ -419,9 +426,9 @@
                   />
 
                   <img
-                    src="./images/meditationapp.jpg"
+                    src="./images/mediamob1x-min.jpg"
                     alt="Mediapp"
-                    width="360"
+                    width=""
                   />
                 </picture>
                 <p class="portfolio-text-marketing">
@@ -440,8 +447,8 @@
                 <picture>
                   <source
                     srcset="
-                      ./images/taxiservice.jpg 1x,
-                      ./images/taxi2x-min.jpg  2x
+                      ./images/taxiservice.jpg       1x,
+                      ./images/taxidesktop2x-min.jpg 2x
                     "
                     media="(min-width: 1158px)"
                   />
@@ -459,7 +466,7 @@
                     "
                     media="(max-width: 767px)"
                   />
-                  <img src="./images/taxiservice.jpg" alt="Taxi" width="360" />
+                  <img src="./images/taximob1x-min.jpg" alt="Taxi" width="" />
                 </picture>
                 <p class="portfolio-text-marketing">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -478,7 +485,7 @@
                   <source
                     srcset="
                       ./images/screenillustrations.jpg 1x,
-                      ./images/screen2x-min.jpg        2x
+                      ./images/screendesktop2x-min.jpg 2x
                     "
                     media="(min-width: 1158px)"
                   />
@@ -497,9 +504,9 @@
                     media="(max-width: 767px)"
                   />
                   <img
-                    src="./images/screenillustrations.jpg"
+                    src="./images/screenmob1x-min.jpg"
                     alt="Screen"
-                    width="360"
+                    width=""
                   />
                 </picture>
                 <p class="portfolio-text-marketing">
@@ -518,8 +525,8 @@
                 <picture>
                   <source
                     srcset="
-                      ./images/onlinecourses.jpg 1x,
-                      ./images/online2x-min.jpg  2x
+                      ./images/onlinecourses.jpg       1x,
+                      ./images/onlinedesktop2x-min.jpg 2x
                     "
                     media="(min-width: 1158px)"
                   />
@@ -538,9 +545,9 @@
                     media="(max-width: 767px)"
                   />
                   <img
-                    src="./images/onlinecourses.jpg"
+                    src="./images/onlinemob1x-min.jpg "
                     alt="Woman"
-                    width="360"
+                    width=""
                   />
                 </picture>
                 <p class="portfolio-text-marketing">
@@ -627,7 +634,7 @@
       </div>
     </footer>
 
-    <div class="backdrop">
+    <div class="backdrop is-open">
       <div class="modal">
         <button type="button" class="modal-close">
           <svg class="icon-modal" width="8" height="8">
@@ -689,8 +696,10 @@
               ><span class="privacy-span">
                 <svg class="check-icon" width="10" height="8">
                   <use href="./images/icons.svg#icon-Vector"></use></svg></span
-              >I accept the terms and conditions of the
-              <a href="" class="check-span">Privacy Policy</a></label
+              ><span class="text-privacy"
+                >I accept the terms and conditions of the
+                <a href="" class="check-span">Privacy Policy</a></span
+              ></label
             >
           </div>
           <button type="submit" class="modal-submit-btn">Send</button>
