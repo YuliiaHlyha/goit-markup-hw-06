@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WebStudio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -60,6 +60,82 @@
             <use href="./images/icons.svg#icon-heroicons"></use>
           </svg>
         </button>
+      </div>
+
+      <!-- Mob menu -->
+
+      <div class="mob-menu is-open">
+        <button type="button" class="close-menu-btn">
+          <svg class="icon-menu" width="8" height="8">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+
+        <nav>
+          <ul class="mob-menu-list">
+            <li class="mob-menu-item">
+              <a class="mob-menu-link studio" href="./index.html">Studio</a>
+            </li>
+            <li class="mob-menu-item">
+              <a class="mob-menu-link" href="">Portfolio</a>
+            </li>
+            <li class="mob-menu-item">
+              <a class="mob-menu-link" href="">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="mob-menu-container">
+          <address class="mob-menu-address">
+            <ul class="mob-menu-address-list">
+              <li class="mob-menu-address-item">
+                <a
+                  class="mob-menu-address-link telefon"
+                  href="tel:+110001111111"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+              <li class="mob-menu-address-item">
+                <a
+                  class="mob-menu-address-link"
+                  href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+          </address>
+
+          <!-- <div class="mob-menu-container"> -->
+          <ul class="mob-menu-icon-list">
+            <li class="mob-menu-icon-item">
+              <a href="" class="mob-menu-icon-link">
+                <svg class="mob-menu-icon-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mob-menu-icon-item">
+              <a href="" class="mob-menu-icon-link">
+                <svg class="mob-menu-icon-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mob-menu-icon-item">
+              <a href="" class="mob-menu-icon-link">
+                <svg class="mob-menu-icon-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mob-menu-icon-item">
+              <a href="" class="mob-menu-icon-link">
+                <svg class="mob-menu-icon-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
 
@@ -634,7 +710,7 @@
       </div>
     </footer>
 
-    <div class="backdrop is-open">
+    <div class="backdrop">
       <div class="modal">
         <button type="button" class="modal-close">
           <svg class="icon-modal" width="8" height="8">
